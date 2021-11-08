@@ -43,7 +43,7 @@ namespace Formularios
             }
             else if(CasaDeChocolate.Guardar(fabrica))
             {
-                MessageBox.Show("Se han fabricado los chocolates con exito!\n Se creo un archivo en su escritorio llamado MiChocolate.txt donde podra ver todos los datos", "Fabricacion completa", MessageBoxButtons.OK);
+                MessageBox.Show("Se han fabricado los chocolates con exito!\n Se creo un archivo en su escritorio llamado CasaChocolate.txt donde podra ver todos los datos", "Fabricacion completa", MessageBoxButtons.OK);
                 fabrica.ListaDeChocolates.Clear();
                 this.Close();
             }

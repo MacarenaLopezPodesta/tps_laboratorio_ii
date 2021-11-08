@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tjOS8gDEgOeEz0o1P8G9VWthuGa1TRIBTXNEMBB6hcF1HT8G3WSsHYAw2kFz4LpcGxMqUjg1muykT3VzvRHK9Q==",
+  "dgSpecHash": "9ps3WtAoWUrt7UV6TIe2sB116TLogEFQRdPfKIW8h7FGH896s0QVtMm9EP7kKlNWw4szIGf9uC4aXiCo28hHkA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\LopezPodesta.Macarena.2A.TPFinal\\TestUnitarioChocolates\\TestUnitarioChocolates.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\tps_prog2\\tps_laboratorio_ii\\TP3\\TestUnitarioChocolates\\TestUnitarioChocolates.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

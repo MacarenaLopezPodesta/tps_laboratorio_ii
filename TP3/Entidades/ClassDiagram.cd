@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Archivos.Xml&lt;T&gt;" BaseTypeListCollapsed="true">
+    <Position X="1" Y="1.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAABAAAAAA=</HashCode>
+      <FileName>Clases\Archivos.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Entidades.Bombones">
+    <Position X="5" Y="13.25" Width="9.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAQAAAAigAAAAAAAAAAAAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>Clases\Bombones.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.CasaDeChocolate" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="0.75" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAYAAACEAAAAgAAAAAAAAIAAIIAABIAAAiA=</HashCode>
+      <FileName>Clases\CasaDeChocolate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Entidades.Chocolate">
+    <Position X="6" Y="8.25" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAIABBAAgAQQAAACAAAAAgAAAABAAAAEAEAAAAACAiQ=</HashCode>
+      <FileName>Clases\Chocolate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Tabletas">
+    <Position X="5" Y="16.75" Width="8.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAACgIAAAAAACAAAAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>Clases\Tabletas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Clases.Texto" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="3.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAABAAAAAA=</HashCode>
+      <FileName>Clases\Texto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Entidades.Excepciones.ArchivosException">
+    <Position X="12.25" Y="3.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Excepciones\ArchivosException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Entidades.Interfaces.IArchivos&lt;T&gt;">
+    <Position X="12.75" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAABAAAAAA=</HashCode>
+      <FileName>Interfaces\IArchivos.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Entidades.Interfaces.IChocolate&lt;T&gt;">
+    <Position X="12.75" Y="2" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IChocolate.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="EClaseChocolate">
+    <Position X="18" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAABAAAAQAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Enums\Enumerados.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EAgregadoBombones">
+    <Position X="18" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAIAAAAEAAAAAA=</HashCode>
+      <FileName>Enums\Enumerados.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EFormaBombones">
+    <Position X="18" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Enums\Enumerados.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="EAgregadoTableta">
+    <Position X="18" Y="12" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAQAAAAABAAAACAAAgAAAAAAA=</HashCode>
+      <FileName>Enums\Enumerados.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ETipoTableta">
+    <Position X="17.75" Y="14.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Enums\Enumerados.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

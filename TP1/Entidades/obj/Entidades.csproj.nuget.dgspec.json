@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\LopezPodesta.Macarena\\Entidades\\Entidades.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\tps_prog2\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\LopezPodesta.Macarena\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\tps_prog2\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\LopezPodesta.Macarena\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\tps_prog2\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\LopezPodesta.Macarena\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\tps_prog2\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\LopezPodesta.Macarena\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\tps_prog2\\tps_laboratorio_ii\\TP1\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

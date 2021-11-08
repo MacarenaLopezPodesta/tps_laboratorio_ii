@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\LopezPodesta.Macarena\\MiCalculadora\\MiCalculadora.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\tps_prog2\\tps_laboratorio_ii\\TP1\\MiCalculadora\\MiCalculadora.csproj",
       "projectName": "MiCalculadora",
-      "projectPath": "C:\\Users\\Usuario\\source\\repos\\LopezPodesta.Macarena\\MiCalculadora\\MiCalculadora.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\tps_prog2\\tps_laboratorio_ii\\TP1\\MiCalculadora\\MiCalculadora.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\source\\repos\\LopezPodesta.Macarena\\MiCalculadora\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\tps_prog2\\tps_laboratorio_ii\\TP1\\MiCalculadora\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Usuario\\source\\repos\\LopezPodesta.Macarena\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\source\\repos\\LopezPodesta.Macarena\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Usuario\\Desktop\\tps_prog2\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\tps_prog2\\tps_laboratorio_ii\\TP1\\Entidades\\Entidades.csproj"
             }
           }
         }
@@ -86,7 +86,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

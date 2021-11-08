@@ -212,7 +212,7 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void txtNumero2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar.ToString().Equals(".") || Char.IsDigit(e.KeyChar) || Char.IsControl(e.KeyChar) || (e.KeyChar.ToString().Equals(",") && !(this.txtNumero2.Text.Contains(","))) || (e.KeyChar.ToString().Equals("-") && this.txtNumero2.Text.Length == 0))
+            if (Char.IsDigit(e.KeyChar) || Char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
             }

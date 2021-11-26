@@ -4,6 +4,9 @@
     <Compile Update="FormCrearBombones.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormInformes.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormLista.cs">
       <SubType>Form</SubType>
     </Compile>

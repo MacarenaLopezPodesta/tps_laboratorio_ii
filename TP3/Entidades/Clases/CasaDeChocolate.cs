@@ -86,6 +86,23 @@ namespace Entidades
         }
 
         /// <summary>
+        /// Elimina el chocolate recibido como parametro de la lista
+        /// </summary>
+        /// <param name="chocolate"></param> chocolate a eliminar 
+        /// <returns> true si se pudo eliminar, false caso contrario</returns>
+        public bool EliminarLista(Chocolate chocolate)
+        {
+            bool rt = false;
+            if (this == chocolate)
+            {
+                this.ListaDeChocolates.Remove(chocolate);
+                rt = true;
+            }
+
+            return rt;
+        }
+       
+        /// <summary>
         /// Sobrecarga del  ==
         /// </summary>
         /// <param name="casaDeChocolate">CasaDeChocolate</param>
@@ -94,24 +111,12 @@ namespace Entidades
         public static bool operator ==(CasaDeChocolate casaDeChocolate, Chocolate chocolate)
         {
             bool resultado = false;
+
             foreach (Chocolate item in casaDeChocolate.listaDeChocolates)
             {
-                if (item.GetType() == chocolate.GetType())
+                if (item == chocolate)
                 {
-                    string marca = item.Marca.Trim().ToLower();
-                    switch (chocolate.GetType().Name)
-                    {
-                        case "Bombones":
-                            resultado = (Bombones)item == (Bombones)chocolate;
-                            break;
-                        case "Tabletas":
-                            resultado = (Tabletas)item == (Tabletas)chocolate;
-                            break;
-                    }
-                }
-                if (resultado)
-                {
-                    break;
+                    resultado = true;
                 }
             }
             return resultado;

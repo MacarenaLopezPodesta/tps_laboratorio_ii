@@ -31,13 +31,23 @@ namespace Test
             Console.WriteLine(fabrica.AgregarLista(tableta2));//false
             Console.WriteLine(fabrica.AgregarLista(tableta3));//true
             Console.WriteLine(fabrica.AgregarLista(bomb1));//true
-            Console.WriteLine(fabrica.AgregarLista(bomb2));//true
+            Console.WriteLine(fabrica.AgregarLista(bomb2));//false
             Console.WriteLine(fabrica.AgregarLista(bomb3));//false
 
             //MOSTRAR TODA LA FABRICA
             Console.WriteLine("\nTEST MOSTRAR TODA LA FABRICA");
             Console.WriteLine(CasaDeChocolate.Mostrar(fabrica));
-     
+
+            //TEST DE ELIMINAR A LA LISTA
+            Console.WriteLine("\nTEST AGREGAR A LA LISTA");
+            Console.WriteLine(fabrica.EliminarLista(tableta1));//true
+            Console.WriteLine(fabrica.EliminarLista(tableta3));//true
+            Console.WriteLine(fabrica.EliminarLista(bomb1));//true
+            
+
+            //MOSTRAR TODA LA FABRICA VACIA
+            Console.WriteLine("\nTEST MOSTRAR TODA LA FABRICA");
+            Console.WriteLine(CasaDeChocolate.Mostrar(fabrica));
 
             Console.ReadKey();
         }

@@ -25,6 +25,16 @@ namespace TestUnitarioChocolates
             Assert.IsTrue(fabrica.ListaDeChocolates.Count > 0);
         }
         [TestMethod]
+        public void EliminarBombonesTest()
+        {
+            CasaDeChocolate fabrica = new CasaDeChocolate("Prueba1");
+            Bombones bombon = new Bombones(EClaseChocolate.Amargo, 10, "Mamuschka", EAgregadoBombones.Whisky, EFormaBombones.Redondo);
+            fabrica.AgregarLista(bombon);
+            Assert.IsTrue(fabrica.ListaDeChocolates.Count == 1);
+            fabrica.EliminarLista(bombon);
+            Assert.IsTrue(fabrica.ListaDeChocolates.Count == 0);
+        }
+        [TestMethod]
         public void AgregarDosChocolatesIguales()
         {
             CasaDeChocolate fabrica = new CasaDeChocolate("Prueba2");

@@ -19,12 +19,11 @@ namespace Formularios
         string nombre = "Milka";
 
         /// <summary>
-        /// LLama a los metodos InitializeComponent y ActualizarDataGrid
+        /// LLama a los metodos InitializeComponent
         /// </summary>
         public FormLista()
         {
             InitializeComponent();
-            ActualizarDataGrid(fabrica);
         }
 
         /// <summary>
@@ -71,20 +70,20 @@ namespace Formularios
         {
             fabrica = CasaDeChocolate.GetFabrica(nombre);
            
-
             foreach (Chocolate item in fabrica.ListaDeChocolates)
-            {   
-                if(item is Bombones)
+            {
+                if (item is Bombones)
                 {
                     CargaDataGrid(item.Marca, item.ClaseDeChocolate, "Bombones", item.Gramos, item.Agregado, item.Tipo, item.CantidadAProducir);
-                }else
+                }
+                else
                 {
-                    if(item is Tabletas)
+                    if (item is Tabletas)
                     {
                         CargaDataGrid(item.Marca, item.ClaseDeChocolate, "Tabletas", item.Gramos, item.Agregado, item.Tipo, item.CantidadAProducir);
                     }
-                }                 
-            }
+                }
+            } 
             
         }
 
@@ -111,6 +110,57 @@ namespace Formularios
             dataGrid[5, posiciones].Value = tipo;
             dataGrid[6, posiciones].Value = cantidad;
 
+        }
+
+        /// <summary>
+        /// Ni bien comienza el form se carga la dataGrid con los datos de la lista
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FormLista_Load(object sender, EventArgs e)
+        {
+            ActualizarDataGrid(fabrica);
+        }
+
+
+        /// <summary>
+        /// Evento del boton Eliminar
+        /// Si la lista esta cargada, se lanza un MessageBox donde se pregunta si se quiere eliminar el registro del chocolate
+        /// Si la respuesta es si, se elimina el elemento de la lista
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button_Eliminar_Click(object sender, EventArgs e)
+        {
+            fabrica = CasaDeChocolate.GetFabrica(nombre);
+            if (fabrica.ListaDeChocolates.Count == 0)
+            {
+                MessageBox.Show("La lista esta vacia, para poder eliminar tiene que registrar algun CHOCOLATE", "NO SE PUDO ELIMINAR", MessageBoxButtons.OK);
+            }
+            else
+            {
+                Chocolate chocolate = this.dataGrid.CurrentRow.DataBoundItem as Chocolate;
+                if (MessageBox.Show($"Esta seguro de que desea eliminarlo", "Adevertencia", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    fabrica = CasaDeChocolate.GetFabrica(nombre);
+                    fabrica.EliminarLista(chocolate);
+                    RefrescarDataGrid();
+                }
+                else
+                {
+                    MessageBox.Show("Operación cancelada");
+                }
+            }
+                
+        }
+
+        /// <summary>
+        /// Cambia los valores de la DataGrid
+        /// </summary>
+        private void RefrescarDataGrid()
+        {
+            this.dataGrid.DataSource = null;
+            this.dataGrid.DataSource = this.fabrica.ListaDeChocolates;
         }
         
     }

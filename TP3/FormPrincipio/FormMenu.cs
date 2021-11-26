@@ -57,6 +57,16 @@ namespace FormPrincipio
             formFabricar.ShowDialog();
         }
 
-        
+        /// <summary>
+        /// Evento del boton Informe de registros
+        /// LLama a el form FormInformes 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button_Informes_Click(object sender, EventArgs e)
+        {
+            FormInformes formInformes = new FormInformes();
+            formInformes.ShowDialog();
+        }
     }
 }

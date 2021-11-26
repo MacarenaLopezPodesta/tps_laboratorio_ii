@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Archivos.Xml&lt;T&gt;" BaseTypeListCollapsed="true">
-    <Position X="1" Y="1.25" Width="3.25" />
+  <Class Name="Archivos.Xml&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAABAAAAAA=</HashCode>
       <FileName>Clases\Archivos.cs</FileName>
@@ -9,93 +9,100 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Entidades.Bombones">
-    <Position X="5" Y="13.25" Width="9.5" />
+    <Position X="12" Y="2.75" Width="7.25" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAQAAAAigAAAAAAAAAAAAIAAAAAAAAAAAiA=</HashCode>
       <FileName>Clases\Bombones.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.CasaDeChocolate" BaseTypeListCollapsed="true">
-    <Position X="5.5" Y="0.75" Width="5" />
+    <Position X="13.75" Y="0.5" Width="5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgAAAAYAAACEAAAAgAAAAAAAAIAAIIAABIAAAiA=</HashCode>
+      <HashCode>AAAAAgAAAAYAAACEAAAAgAAAAAAAAIAAIIIABIAAAiA=</HashCode>
       <FileName>Clases\CasaDeChocolate.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Entidades.Chocolate">
-    <Position X="6" Y="8.25" Width="5" />
+    <Position X="0.5" Y="0.5" Width="7.25" />
     <TypeIdentifier>
       <HashCode>AAIABBAAgAQQAAACAAAAAgAAAABAAAAEAEAAAAACAiQ=</HashCode>
       <FileName>Clases\Chocolate.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.Tabletas">
-    <Position X="5" Y="16.75" Width="8.75" />
+    <Position X="1.25" Y="5.75" Width="8.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAQAAAACgIAAAAAACAAAAIAAAAAAAAAAAiA=</HashCode>
       <FileName>Clases\Tabletas.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Entidades.Clases.Texto" BaseTypeListCollapsed="true">
-    <Position X="0.75" Y="3.5" Width="3.75" />
+  <Class Name="Entidades.Clases.Informes">
+    <Position X="11.5" Y="8" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAAACAAAAACACEAAIAAAAoAAAAgQAAAAAAEAAAgAA=</HashCode>
+      <FileName>Clases\Informes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Clases.Texto" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAABAAAAAA=</HashCode>
       <FileName>Clases\Texto.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="Entidades.Excepciones.ArchivosException">
-    <Position X="12.25" Y="3.75" Width="3.5" />
+  <Class Name="Entidades.Excepciones.ArchivosException" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Excepciones\ArchivosException.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="Entidades.Interfaces.IArchivos&lt;T&gt;">
-    <Position X="12.75" Y="0.5" Width="3.5" />
+  <Interface Name="Entidades.Interfaces.IArchivos&lt;T&gt;" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAABAAAAAA=</HashCode>
       <FileName>Interfaces\IArchivos.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Entidades.Interfaces.IChocolate&lt;T&gt;">
-    <Position X="12.75" Y="2" Width="3.5" />
+  <Interface Name="Entidades.Interfaces.IChocolate&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IChocolate.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="EClaseChocolate">
-    <Position X="18" Y="9.5" Width="1.5" />
+  <Enum Name="EClaseChocolate" Collapsed="true">
+    <Position X="11.5" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAAAAABAAAAQAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>Enums\Enumerados.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="EAgregadoBombones">
-    <Position X="18" Y="7" Width="1.75" />
+  <Enum Name="EAgregadoBombones" Collapsed="true">
+    <Position X="9.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAIAAAAEAAAAAA=</HashCode>
       <FileName>Enums\Enumerados.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="EFormaBombones">
-    <Position X="18" Y="5" Width="1.75" />
+  <Enum Name="EFormaBombones" Collapsed="true">
+    <Position X="9.75" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Enums\Enumerados.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="EAgregadoTableta">
-    <Position X="18" Y="12" Width="1.75" />
+  <Enum Name="EAgregadoTableta" Collapsed="true">
+    <Position X="9.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAAQAAAAABAAAACAAAgAAAAAAA=</HashCode>
       <FileName>Enums\Enumerados.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="ETipoTableta">
-    <Position X="17.75" Y="14.5" Width="1.75" />
+  <Enum Name="ETipoTableta" Collapsed="true">
+    <Position X="11.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>Enums\Enumerados.cs</FileName>

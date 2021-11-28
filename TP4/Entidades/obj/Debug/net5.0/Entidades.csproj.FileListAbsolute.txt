@@ -33,3 +33,4 @@ C:\Users\Usuario\Desktop\tps_prog2\tps_laboratorio_ii\TP4\Entidades\bin\Debug\ne
 C:\Users\Usuario\Desktop\tps_prog2\tps_laboratorio_ii\TP4\Entidades\bin\Debug\net5.0\Entidades.dll
 C:\Users\Usuario\Desktop\tps_prog2\tps_laboratorio_ii\TP4\Entidades\bin\Debug\net5.0\ref\Entidades.dll
 C:\Users\Usuario\Desktop\tps_prog2\tps_laboratorio_ii\TP4\Entidades\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Usuario\Desktop\tps_prog2\tps_laboratorio_ii\TP4\Entidades\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache

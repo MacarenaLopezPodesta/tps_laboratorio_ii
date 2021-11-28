@@ -2,6 +2,12 @@
 using Entidades;
 using Entidades.Clases;
 using Entidades.Interfaces;
+using Archivos;
+using System.Xml;
+using System.Xml.Serialization;
+using System.Text;
+using Entidades.Excepciones;
+
 namespace Test
 {
     class Program
@@ -11,7 +17,7 @@ namespace Test
             CasaDeChocolate fabrica = new CasaDeChocolate("Arcor");
 
             Tabletas tableta1 = new Tabletas(EClaseChocolate.Amargo, 15, "cofler", EAgregadoTableta.Almendra, ETipoTableta.Aireado);
-            Tabletas tableta2 = new Tabletas(EClaseChocolate.Amargo, 20, "cofler",  EAgregadoTableta.Almendra, ETipoTableta.Aireado);
+            Tabletas tableta2 = new Tabletas(EClaseChocolate.Amargo, 20, "cofler", EAgregadoTableta.Almendra, ETipoTableta.Aireado);
             Tabletas tableta3 = new Tabletas(EClaseChocolate.Leche, 20, "cofler", EAgregadoTableta.Almendra, ETipoTableta.Aireado);
 
             Bombones bomb1 = new Bombones(EClaseChocolate.Blanco, 15, "cofler", EAgregadoBombones.Licor, EFormaBombones.Corazon);
@@ -26,12 +32,12 @@ namespace Test
             Console.WriteLine(tableta2 == tableta1);//true
 
             //TEST DE AGREGAR A LA LISTA
-            Console.WriteLine("\nTEST AGREGAR A LA LISTA");
+            Console.WriteLine("\nTEST AGREGAR CHOCOLATES A LA LISTA");
             Console.WriteLine(fabrica.AgregarLista(tableta1));//true
             Console.WriteLine(fabrica.AgregarLista(tableta2));//false
             Console.WriteLine(fabrica.AgregarLista(tableta3));//true
             Console.WriteLine(fabrica.AgregarLista(bomb1));//true
-            Console.WriteLine(fabrica.AgregarLista(bomb2));//false
+            Console.WriteLine(fabrica.AgregarLista(bomb2));//true
             Console.WriteLine(fabrica.AgregarLista(bomb3));//false
 
             //MOSTRAR TODA LA FABRICA
@@ -39,11 +45,12 @@ namespace Test
             Console.WriteLine(CasaDeChocolate.Mostrar(fabrica));
 
             //TEST DE ELIMINAR A LA LISTA
-            Console.WriteLine("\nTEST AGREGAR A LA LISTA");
+            Console.WriteLine("\nTEST ELIMINAR CHOCOLATES A LA LISTA");
             Console.WriteLine(fabrica.EliminarLista(tableta1));//true
             Console.WriteLine(fabrica.EliminarLista(tableta3));//true
             Console.WriteLine(fabrica.EliminarLista(bomb1));//true
-            
+            Console.WriteLine(fabrica.EliminarLista(bomb2));//true
+
 
             //MOSTRAR TODA LA FABRICA VACIA
             Console.WriteLine("\nTEST MOSTRAR TODA LA FABRICA");

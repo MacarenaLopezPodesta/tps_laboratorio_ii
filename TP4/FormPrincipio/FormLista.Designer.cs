@@ -39,7 +39,7 @@ namespace Formularios
             this.CantidadAProducir = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button_Cancelar = new System.Windows.Forms.Button();
             this.button_Fabricar = new System.Windows.Forms.Button();
-            this.button_Eliminar = new System.Windows.Forms.Button();
+            this.button_ImportarXml = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,24 +131,24 @@ namespace Formularios
             this.button_Fabricar.UseVisualStyleBackColor = false;
             this.button_Fabricar.Click += new System.EventHandler(this.button_Fabricar_Click);
             // 
-            // button_Eliminar
+            // button_ImportarXml
             // 
-            this.button_Eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button_Eliminar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Eliminar.Location = new System.Drawing.Point(280, 403);
-            this.button_Eliminar.Name = "button_Eliminar";
-            this.button_Eliminar.Size = new System.Drawing.Size(163, 46);
-            this.button_Eliminar.TabIndex = 20;
-            this.button_Eliminar.Text = "Eliminar";
-            this.button_Eliminar.UseVisualStyleBackColor = false;
-            this.button_Eliminar.Click += new System.EventHandler(this.button_Eliminar_Click);
+            this.button_ImportarXml.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button_ImportarXml.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_ImportarXml.Location = new System.Drawing.Point(275, 403);
+            this.button_ImportarXml.Name = "button_ImportarXml";
+            this.button_ImportarXml.Size = new System.Drawing.Size(163, 46);
+            this.button_ImportarXml.TabIndex = 20;
+            this.button_ImportarXml.Text = "Importar Archivo";
+            this.button_ImportarXml.UseVisualStyleBackColor = false;
+            this.button_ImportarXml.Click += new System.EventHandler(this.button_ImportarXml_Click);
             // 
             // FormLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(745, 475);
-            this.Controls.Add(this.button_Eliminar);
+            this.Controls.Add(this.button_ImportarXml);
             this.Controls.Add(this.button_Fabricar);
             this.Controls.Add(this.button_Cancelar);
             this.Controls.Add(this.dataGrid);
@@ -175,6 +175,6 @@ namespace Formularios
         private System.Windows.Forms.DataGridViewTextBoxColumn CantidadAProducir;
         private System.Windows.Forms.Button button_Cancelar;
         private System.Windows.Forms.Button button_Fabricar;
-        private System.Windows.Forms.Button button_Eliminar;
+        private System.Windows.Forms.Button button_ImportarXml;
     }
 }

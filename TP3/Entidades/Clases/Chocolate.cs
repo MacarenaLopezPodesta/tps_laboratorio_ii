@@ -11,7 +11,7 @@ namespace Entidades
 {
     [Serializable]
    
-    public abstract class Chocolate
+    public  class Chocolate
     {
         private EClaseChocolate chocolate;
         private int cantidadAProducir;
@@ -20,6 +20,7 @@ namespace Entidades
         private int gramos;
         private string tipo;
 
+        public Chocolate() { }
         /// <summary>
         /// Constructor publico
         /// </summary>
@@ -29,7 +30,7 @@ namespace Entidades
         /// <param name="agregado"></param>
         /// <param name="gramos"></param>
         /// <param name="tipo"></param>
-        protected Chocolate(EClaseChocolate chocolate, int cantidadAProducir, string marca,string agregado,int gramos,string tipo)
+        public Chocolate(EClaseChocolate chocolate, int cantidadAProducir, string marca,string agregado,int gramos,string tipo)
         {
             ClaseDeChocolate = chocolate;
             CantidadAProducir = cantidadAProducir;
@@ -132,7 +133,7 @@ namespace Entidades
         {
             if (!(a is null) && !(b is null))
             {
-                return a.marca == b.marca && a.chocolate == b.chocolate;
+                return a.marca == b.marca && a.chocolate == b.chocolate && a.gramos == b.gramos && a.tipo == b.tipo && a.agregado == b.agregado;
             }
             return false;
         }

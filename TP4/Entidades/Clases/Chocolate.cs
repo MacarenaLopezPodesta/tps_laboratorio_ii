@@ -20,6 +20,7 @@ namespace Entidades
         private int gramos;
         private string tipo;
 
+        public Chocolate() { }
         /// <summary>
         /// Constructor publico
         /// </summary>
@@ -38,9 +39,7 @@ namespace Entidades
             Marca = marca;
             Tipo = tipo;
         }
-        public Chocolate()
-        {
-        }
+        
         /// <summary>
         /// Propiedad de lectura y escritura del atributo gramos
         /// </summary>
@@ -134,7 +133,7 @@ namespace Entidades
         {
             if (!(a is null) && !(b is null))
             {
-                return a.marca == b.marca && a.chocolate == b.chocolate;
+                return a.marca == b.marca && a.chocolate == b.chocolate && a.gramos == b.gramos && a.tipo == b.tipo && a.agregado == b.agregado;
             }
             return false;
         }

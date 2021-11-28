@@ -12,7 +12,7 @@ namespace FormPrincipio
     {
         CasaDeChocolate fabrica;
         string nombre = "Milka";
-
+     
         /// <summary>
         /// Inicializa los componentes y crea una fabrica
         /// </summary>
@@ -20,7 +20,7 @@ namespace FormPrincipio
         {
             InitializeComponent();
             fabrica = new CasaDeChocolate(nombre);
-         
+
         }
 
         /// <summary>
@@ -51,7 +51,8 @@ namespace FormPrincipio
 
                 
         }
-        
+       
+
         /// <summary>
         /// Evento del boton Fabricar
         /// LLama a el form FormLista

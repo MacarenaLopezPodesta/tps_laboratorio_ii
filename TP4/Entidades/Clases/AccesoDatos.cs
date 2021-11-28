@@ -23,7 +23,7 @@ namespace Entidades
         /// </summary>
         static AccederDatos()
         {
-            AccederDatos.cadena_conexion = @"Server=LAPTOP-JCR9PNRV;Database=TP4_Macarena;Trusted_Connection=True;";
+            AccederDatos.cadena_conexion = @"Server=localhost;Database=TP4_Macarena;Trusted_Connection=True;";
         }
         /// <summary>
         /// Constructor establece conexion

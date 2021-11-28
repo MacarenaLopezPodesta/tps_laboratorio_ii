@@ -63,7 +63,7 @@ namespace FormPrincipio
             // 
             this.button_Fabricar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button_Fabricar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Fabricar.Location = new System.Drawing.Point(12, 252);
+            this.button_Fabricar.Location = new System.Drawing.Point(12, 260);
             this.button_Fabricar.Name = "button_Fabricar";
             this.button_Fabricar.Size = new System.Drawing.Size(217, 42);
             this.button_Fabricar.TabIndex = 4;

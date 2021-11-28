@@ -68,5 +68,7 @@ namespace FormPrincipio
             FormInformes formInformes = new FormInformes();
             formInformes.ShowDialog();
         }
+
+       
     }
 }

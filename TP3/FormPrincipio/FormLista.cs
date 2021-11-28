@@ -10,6 +10,10 @@ using System.Windows.Forms;
 using Entidades.Clases;
 using Entidades;
 using System.Collections;
+using System.IO;
+using System.Xml.Serialization;
+using System.Xml;
+using Entidades.Excepciones;
 
 namespace Formularios
 {
@@ -17,7 +21,8 @@ namespace Formularios
     {
         CasaDeChocolate fabrica;
         string nombre = "Milka";
-
+        string ruta = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ChocolatesXml.xml");
+        
         /// <summary>
         /// LLama a los metodos InitializeComponent
         /// </summary>
@@ -68,8 +73,12 @@ namespace Formularios
         /// <param name="fabrica"></param> 
         private void ActualizarDataGrid( CasaDeChocolate fabrica)
         {
+            while(dataGrid.RowCount > 1){
+
+                dataGrid.Rows.Remove(dataGrid.CurrentRow);
+
+            }
             fabrica = CasaDeChocolate.GetFabrica(nombre);
-           
             foreach (Chocolate item in fabrica.ListaDeChocolates)
             {
                 if (item is Bombones)
@@ -81,6 +90,12 @@ namespace Formularios
                     if (item is Tabletas)
                     {
                         CargaDataGrid(item.Marca, item.ClaseDeChocolate, "Tabletas", item.Gramos, item.Agregado, item.Tipo, item.CantidadAProducir);
+                    }else
+                    {
+                        if (item is Chocolate)
+                        {
+                            CargaDataGrid(item.Marca, item.ClaseDeChocolate, "Chocolate", item.Gramos, item.Agregado, item.Tipo, item.CantidadAProducir);
+                        }
                     }
                 }
             } 
@@ -122,46 +137,52 @@ namespace Formularios
             ActualizarDataGrid(fabrica);
         }
 
-
         /// <summary>
-        /// Evento del boton Eliminar
-        /// Si la lista esta cargada, se lanza un MessageBox donde se pregunta si se quiere eliminar el registro del chocolate
-        /// Si la respuesta es si, se elimina el elemento de la lista
+        /// Evento del boton importar
+        /// Se lee un archivo de texto y se agregan los chocolates a la fabrica
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button_Eliminar_Click(object sender, EventArgs e)
+        private void button_ImportarXml_Click(object sender, EventArgs e)
         {
-            fabrica = CasaDeChocolate.GetFabrica(nombre);
-            if (fabrica.ListaDeChocolates.Count == 0)
-            {
-                MessageBox.Show("La lista esta vacia, para poder eliminar tiene que registrar algun CHOCOLATE", "NO SE PUDO ELIMINAR", MessageBoxButtons.OK);
-            }
-            else
-            {
-                Chocolate chocolate = this.dataGrid.CurrentRow.DataBoundItem as Chocolate;
-                if (MessageBox.Show($"Esta seguro de que desea eliminarlo", "Adevertencia", MessageBoxButtons.YesNo) == DialogResult.Yes)
+           
+                if (MessageBox.Show($"Esta seguro de abrir un archivo?\n", "Advertencia", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     fabrica = CasaDeChocolate.GetFabrica(nombre);
-                    fabrica.EliminarLista(chocolate);
-                    RefrescarDataGrid();
-                }
-                else
-                {
-                    MessageBox.Show("Operación cancelada");
-                }
-            }
-                
-        }
+                    CasaDeChocolate fabrica2 = new CasaDeChocolate();
+                    XmlSerializer serializer;
+                    XmlTextReader reader = null;
+                   
+                    try
+                    {
+                        serializer = new XmlSerializer(typeof(CasaDeChocolate));
+                        reader = new XmlTextReader(ruta);
+                         fabrica2 = (CasaDeChocolate)serializer.Deserialize(reader);
 
-        /// <summary>
-        /// Cambia los valores de la DataGrid
-        /// </summary>
-        private void RefrescarDataGrid()
-        {
-            this.dataGrid.DataSource = null;
-            this.dataGrid.DataSource = this.fabrica.ListaDeChocolates;
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new ArchivosException(ex);
+                    }
+                    finally
+                    {
+                        if (reader != null)
+                        {
+                            reader.Close();
+                        }
+
+                    }
+                foreach (Chocolate item in fabrica2.ListaDeChocolates)
+                {
+                    this.fabrica.AgregarLista(item);
+                }
+
+                MessageBox.Show($"Se importo la lista de ChocolatesXml\n Path:{this.ruta}");
+                ActualizarDataGrid(fabrica);
+                this.button_ImportarXml.Enabled = false;
+
+            }
+            
         }
-        
     }
 }

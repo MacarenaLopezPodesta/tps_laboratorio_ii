@@ -13,6 +13,7 @@ namespace Entidades
         private EAgregadoTableta agregadoTableta;
         private ETipoTableta tipoTableta;
 
+        
         /// <summary>
         /// Constructor que instancia un objeto llamando a la clase base
         /// </summary>

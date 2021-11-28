@@ -11,6 +11,7 @@ using System.Xml.Serialization;
 using Entidades.Clases;
 namespace Entidades
 {
+    [Serializable]
     public class CasaDeChocolate : IChocolate<Chocolate>
     {
         private List<Chocolate> listaDeChocolates;

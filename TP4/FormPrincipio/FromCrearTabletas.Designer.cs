@@ -131,6 +131,7 @@ namespace Formularios
             this.comboBox_AgregadoTabletas.Name = "comboBox_AgregadoTabletas";
             this.comboBox_AgregadoTabletas.Size = new System.Drawing.Size(121, 23);
             this.comboBox_AgregadoTabletas.TabIndex = 12;
+           
             // 
             // button_Salir
             // 

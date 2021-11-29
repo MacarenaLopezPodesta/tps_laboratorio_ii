@@ -35,7 +35,7 @@ namespace Formularios
             task.Start();
         }
         /// <summary>
-        /// Simula el proceso de calcular estadisticas
+        /// Simula el progreso de calcular informes
         /// </summary>
         private void GenerarInformes()
         {
@@ -46,7 +46,7 @@ namespace Formularios
             }
         }
         /// <summary>
-        /// Aumenta la barra de proceso
+        /// Aumenta la barra de progreso
         /// </summary>
         private void Progreso()
         {

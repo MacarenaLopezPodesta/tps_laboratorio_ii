@@ -49,10 +49,6 @@ namespace Formularios
             else if(CasaDeChocolate.Guardar(fabrica))
             {
                 MessageBox.Show("Se han fabricado los chocolates con exito!\n Se creo un archivo en su escritorio llamado CasaChocolate.txt donde podra ver todos los datos", "Fabricacion completa", MessageBoxButtons.OK);
-
-
-                MessageBox.Show(fabrica.ListaDeChocolates.Count.ToString());
-
                 GramosTotalesDeChocolate(fabrica);
                 MessageBox.Show("Se creo un archivo en su escritorio llamado GramosChocolate.txt donde podra ver todos los gramos de los chocolates", "PERFECTO!", MessageBoxButtons.OK);
                
@@ -61,6 +57,11 @@ namespace Formularios
                 this.Close();
             }
         }
+
+        /// <summary>
+        ///  cada vez que se fabriquen los chocolates se creara un txt con los datos de los gramos de chocolates gastados
+        /// </summary>
+        /// <param name="fabrica"></param>
         public void GramosTotalesDeChocolate(CasaDeChocolate fabrica)
         {
             Texto texto = null;
@@ -165,10 +166,13 @@ namespace Formularios
         }
 
         private void dataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+        {}
 
-        }
-
+        /// <summary>
+        /// Se agregara a la lista los datos del archivo xml
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button_ImportarXml_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show($"Esta seguro de abrir un archivo?\n", "Advertencia", MessageBoxButtons.YesNo) == DialogResult.Yes)

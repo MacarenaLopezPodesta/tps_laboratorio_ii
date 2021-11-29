@@ -98,5 +98,7 @@ namespace Formularios
             if (result == DialogResult.Yes)
                 this.Close();
         }
+
+        
     }
 }

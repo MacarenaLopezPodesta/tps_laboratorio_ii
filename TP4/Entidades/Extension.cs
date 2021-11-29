@@ -8,6 +8,12 @@ namespace Entidades
 {
     public static class Extension
     {
+        /// <summary>
+        /// Se calcularan los gramos de chocolates gastados 
+        /// </summary>
+        /// <param name="fabrica">lista de la cual se usaran los datos para calcular los gramos de los chocolates</param>
+        /// <param name="total"> parametro a el cual se le asignara el valor del total</param>
+        /// <returns> string, donde indicaran los gramos usados de los chocolates</returns>
         public static string GramosTotalExt(this CasaDeChocolate fabrica, out double total)
         {
             double acumuladorChocolateLeche = 0;

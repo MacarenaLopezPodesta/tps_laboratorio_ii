@@ -16,6 +16,9 @@ namespace Entidades
         public delegate void CambioHorario(Horario horario);
         public event CambioHorario HorarioCambiado;
 
+        /// <summary>
+        /// Iniciara el cambio de horario
+        /// </summary>
         public void Iniciar()
         {
             Task.Run(() =>

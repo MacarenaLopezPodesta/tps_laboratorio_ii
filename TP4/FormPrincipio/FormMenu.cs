@@ -78,12 +78,22 @@ namespace FormPrincipio
             formInformes.ShowDialog();
         }
 
+        /// <summary>
+        /// Se iniciara el reloj
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form_Menu_Load(object sender, EventArgs e)
         {
             Horario horario = new Horario();
             horario.HorarioCambiado += AsignarHorario;
             horario.Iniciar();
         }
+
+        /// <summary>
+        /// Invicara a el delegado y se cambiara el horario del reloj
+        /// </summary>
+        /// <param name="horario"></param>
         public void AsignarHorario(Horario horario)
         {
             if (label_Horario.InvokeRequired)
@@ -102,6 +112,11 @@ namespace FormPrincipio
 
         }
 
+        /// <summary>
+        /// Importara datos de la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button_BaseDeDatos_Click(object sender, EventArgs e)
         {
             
@@ -132,6 +147,11 @@ namespace FormPrincipio
             }
         }
 
+        /// <summary>
+        /// exportar la lista de chocolates registrados a la base de datos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button_ExportarBaseDeDatos_Click(object sender, EventArgs e)
         {
             fabrica = CasaDeChocolate.GetFabrica(nombre);
@@ -140,7 +160,7 @@ namespace FormPrincipio
             {
                 if (!accederDatos.AgregarDato(item))
                 {
-                    MessageBox.Show("Ocurrio un problema al agregar el asegurado");
+                    MessageBox.Show("Ocurrio un problema al agregar el chocolate");
                  
                 }
                
